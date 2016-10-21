@@ -302,17 +302,17 @@ if version >= 508 || !exists("did_javascript_syn_inits")
   HiLink jsBooleanFalse         Boolean
   HiLink jsObjectColon          jsNoise
   HiLink jsNoise                Noise
-  HiLink jsBrackets             Noise
+  HiLink jsBrackets             Function
   HiLink jsParens               Noise
-  HiLink jsBraces               Noise
-  HiLink jsFuncBraces           Noise
+  HiLink jsBraces               Function
+  HiLink jsFuncBraces           jsBraces
   HiLink jsFuncParens           Noise
-  HiLink jsClassBraces          Noise
+  HiLink jsClassBraces          jsBraces
   HiLink jsClassNoise           Noise
   HiLink jsIfElseBraces         jsBraces
   HiLink jsTryCatchBraces       jsBraces
   HiLink jsModuleBraces         jsBraces
-  HiLink jsObjectBraces         Noise
+  HiLink jsObjectBraces         jsBraces
   HiLink jsObjectSeparator      Noise
   HiLink jsFinallyBraces        jsBraces
   HiLink jsRepeatBraces         jsBraces
